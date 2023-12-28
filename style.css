@@ -63,7 +63,7 @@ ul {
     list-style-type: disc;
 }
 
-ol ol, ol ul {
+ul ul {
     background: rgb(32, 34, 36);
     box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
