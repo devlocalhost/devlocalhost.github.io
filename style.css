@@ -1,6 +1,5 @@
 :root {
-    --accent-color: #20bf6b;
-    --link-color: #9bcbfb;
+    --accent-color: #9bcbfb;
     --background-color: rgb(26, 28, 30);
     --text-color: #cacaca;
     --ul-ol-background-color: #303030;
@@ -36,17 +35,20 @@ span {
     color: #ed4245;
 }
 
-h1, h2 {
+h1,
+h2 {
     line-height: 1.2;
 }
 
 a {
     cursor: pointer;
-    color: var(--link-color);
+    color: var(--accent-color);
     text-decoration: none;
 }
 
-ul, ol, p {
+ul,
+ol,
+p {
     background: var(--ul-ol-background-color);
     padding-top: 11px;
     padding-bottom: 11px;
