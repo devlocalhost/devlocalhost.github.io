@@ -9,7 +9,7 @@
 
     <body>
         <h1 class="colored">Redirecting you...</h1>
-        <p>Not working? Click <a id="redirectLink" href="">here</a></p>
+        <p>Not working? Click <a id="redirectLink" href="">here</a>, or click <a href="https://devlocalhost.github.io/">here</a> to go back.</p>
 
         <script>
             var workingUrl = "https://laurel-updates-dev64.koyeb.app";
@@ -18,7 +18,13 @@
             var pathName = window.location.pathname;
 
             if (pathName !== "/") {
-                redirectLaurel = workingUrl + pathName;
+                var redirectLaurel = "";
+
+                if (pathName === "/lu") {
+                    redirectLaurel = workingUrl;
+                } else {
+                    redirectLaurel = workingUrl + pathName;
+                }
 
                 // Wait for the DOM to be fully loaded
                 document.addEventListener("DOMContentLoaded", function() {
