@@ -4,18 +4,24 @@
         <title>Redirecting to laurel_updates...</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
+        <script>
+            var workingUrl = "https://laurel-updates-dev64.koyeb.app";
+            //        main: https://laurel-updates.onrender.com
+            // alternative: https://laurel-updates-dev64.koyeb.app
+            var pathName = window.location.pathname;
 
-        <link rel="stylesheet" href="https://raw.githubusercontent.com/devlocalhost/devlocalhost.github.io/main/style.css" />
+            if (pathName !== "/") {
+                redirectLaurel = workingUrl + pathName;
+
+                document.getElementById("redirectLink").href = redirectLaurel;
+                window.location.href = redirectLaurel;
+            }
+        </script>
         <!-- <link rel="stylesheet" href="style.css" /> -->
     </head>
 
     <body>
         <h1 class="colored">Redirecting you...</h1>
         <p>Not working? Click <a id="redirectLink" href="">here</a></p>
-
-        <script src="https://raw.githubusercontent.com/devlocalhost/devlocalhost.github.io/main/snowstorm.js"></script>
-        <script src="https://raw.githubusercontent.com/devlocalhost/devlocalhost.github.io/main/script.js"></script>
-        <!-- <script src="snowstorm.js"></script> -->
-        <!-- <script src="script.js"></script> -->
     </body>
 </html>
