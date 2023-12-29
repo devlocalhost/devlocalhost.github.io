@@ -5,11 +5,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="utf-8" />
         <!-- <link rel="stylesheet" href="style.css" /> -->
+
+        <style>
+            .colored:first-letter {
+                color: #9bcbfb;
+            }
+
+            body {
+                color: #cacaca;
+                background-color: rgb(26, 28, 30);
+                margin: 1em auto;
+                max-width: 40em;
+                font: 1.2em/1.62 sans-serif;
+                padding: 0 0.92em 3.24em;
+            }
+            h1 {
+                line-height: 1.2;
+            }
+
+            a {
+                cursor: pointer;
+                color: #9bcbfb;
+                text-decoration: none;
+            }
+
+            p {
+                background: #303030;
+                padding: 11px;
+                border-radius: 15px;
+            }
+        </style>
     </head>
 
     <body>
         <h1 class="colored">Redirecting you...</h1>
-        <p>Not working? Click <a id="redirectLink" href="">here</a>, or click <a href="https://devlocalhost.github.io/">here</a> to go back.</p>
+        <p>Not working? Click <a id="redirectLink" href="">here</a> to get redirected, or <a href="https://devlocalhost.github.io/">here</a> to go back.</p>
 
         <script>
             var workingUrl = "https://laurel-updates-dev64.koyeb.app";
