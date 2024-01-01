@@ -49,12 +49,12 @@ a {
 ul,
 ol,
 p {
+    margin-top: 5px;
     background: var(--ul-ol-background-color);
     padding-top: 11px;
     padding-bottom: 11px;
     padding-right: 11px;
     border-radius: 15px;
-    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 p {
@@ -67,7 +67,6 @@ ul {
 
 ul ul {
     background: rgb(32, 34, 36);
-    box-shadow: 0 0 var(--box-border-size) var(--box-border-color);
 }
 
 .colored::first-letter {
