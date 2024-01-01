@@ -123,10 +123,10 @@ var snowStorm = (function (window, document) {
                 opera: has("OTransform"),
                 webkit: has("webkitTransform"),
                 w3: has("transform"),
-                prop: null // the normalized property value
+                prop: null, // the normalized property value
             },
 
-            getAnimationFrame: getAnimationFrame
+            getAnimationFrame: getAnimationFrame,
         };
 
         localFeatures.transform.prop =
@@ -178,7 +178,7 @@ var snowStorm = (function (window, document) {
             slice = Array.prototype.slice,
             evt = {
                 add: old ? "attachEvent" : "addEventListener",
-                remove: old ? "detachEvent" : "removeEventListener"
+                remove: old ? "detachEvent" : "removeEventListener",
             };
 
         function getArgs(oArgs) {
@@ -215,7 +215,7 @@ var snowStorm = (function (window, document) {
 
         return {
             add: addEvent,
-            remove: removeEvent
+            remove: removeEvent,
         };
     })();
 
@@ -252,7 +252,7 @@ var snowStorm = (function (window, document) {
                   window.scrollY ||
                       document.documentElement.scrollTop ||
                       (noFixed ? document.body.scrollTop : 0),
-                  10
+                  10,
               );
         if (isNaN(scrollY)) {
             scrollY = 0; // Netscape 6 scroll fix
@@ -602,7 +602,7 @@ var snowStorm = (function (window, document) {
         var i;
         for (i = 0; i < limit; i++) {
             storm.flakes[storm.flakes.length] = new storm.SnowFlake(
-                parseInt(rnd(flakeTypes), 10)
+                parseInt(rnd(flakeTypes), 10),
             );
             if (allowInactive || i > storm.flakesMaxActive) {
                 storm.flakes[storm.flakes.length - 1].active = -1;
@@ -640,7 +640,7 @@ var snowStorm = (function (window, document) {
             storm.events.add(
                 isIE ? document : window,
                 "mousemove",
-                storm.mouseMove
+                storm.mouseMove,
             );
         }
         storm.animationInterval = Math.max(20, storm.animationInterval);
@@ -659,7 +659,7 @@ var snowStorm = (function (window, document) {
             storm.targetElement = document.getElementById(targetID);
             if (!storm.targetElement) {
                 throw new Error(
-                    'Snowstorm: Unable to get targetElement "' + targetID + '"'
+                    'Snowstorm: Unable to get targetElement "' + targetID + '"',
                 );
             }
         }
@@ -705,7 +705,7 @@ var snowStorm = (function (window, document) {
         storm.events.remove(
             isIE ? document : window,
             "mousemove",
-            doDelayedStart
+            doDelayedStart,
         );
     }
 

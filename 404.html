@@ -39,7 +39,11 @@
 
     <body>
         <h1 class="colored">Redirecting you...</h1>
-        <p>Not working? Click <a id="redirectLink" href="">here</a> to get redirected, or <a href="https://devlocalhost.github.io/">here</a> to go back.</p>
+        <p>
+            Not working? Click <a id="redirectLink" href="">here</a> to get
+            redirected, or <a href="https://devlocalhost.github.io/">here</a> to
+            go back.
+        </p>
 
         <script>
             var workingUrl = "https://laurel-updates.onrender.com";
@@ -57,12 +61,12 @@
                 }
 
                 // Wait for the DOM to be fully loaded
-                document.addEventListener("DOMContentLoaded", function() {
-                    document.getElementById("redirectLink").href = redirectLaurel;
+                document.addEventListener("DOMContentLoaded", function () {
+                    document.getElementById("redirectLink").href =
+                        redirectLaurel;
                     window.location.href = redirectLaurel;
                 });
             }
         </script>
     </body>
 </html>
-
