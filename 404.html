@@ -7,13 +7,20 @@
         <!-- <link rel="stylesheet" href="style.css" /> -->
 
         <style>
+            :root {
+                --accent-color: #93CDF6;
+                --background-color: #161C21;
+                --text-color: #D2E5F5;
+                --ul-ol-background-color: #2D3135;
+            }
+
             .colored:first-letter {
-                color: #9bcbfb;
+                color: var(--accent-color);
             }
 
             body {
-                color: #cacaca;
-                background-color: rgb(26, 28, 30);
+                color: var(--text-color);
+                background-color: var(--background-color);
                 margin: 1em auto;
                 max-width: 40em;
                 font: 1.2em/1.62 sans-serif;
@@ -25,12 +32,12 @@
 
             a {
                 cursor: pointer;
-                color: #9bcbfb;
+                color: var(--accent-color);
                 text-decoration: none;
             }
 
             p {
-                background: #303030;
+                background: var(--ul-ol-background-color);
                 padding: 11px;
                 border-radius: 15px;
             }

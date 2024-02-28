@@ -1,4 +1,5 @@
-:root {                                               --accent-color: #93CDF6;
+:root {
+    --accent-color: #93CDF6;
     --background-color: #161C21;
     --text-color: #D2E5F5;
     --box-border-color: #111;
