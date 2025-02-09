@@ -56,6 +56,7 @@
             // var workingUrl = "https://laurel-updates.onrender.com";
             var workingUrl = "https://laurel-updates.vercel.app";
             // var workingUrl = "https://laurel-updates-dev64.koyeb.app";
+            var betaUrl = "https://laurel-updates-git-beta-dev64s-projects-14b357fc.vercel.app/";
 
             var pathName = window.location.pathname;
 
@@ -64,6 +65,8 @@
 
                 if (pathName === "/lu") {
                     redirectLaurel = workingUrl;
+                } else if (pathName === "/lubeta") {
+                    redirectLaurel = betaUrl;
                 } else {
                     redirectLaurel = workingUrl + pathName;
                 }
