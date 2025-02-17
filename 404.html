@@ -35,11 +35,10 @@
                     redirectLaurel = workingUrl + pathName;
                 }
 
-                // Wait for the DOM to be fully loaded
                 document.addEventListener("DOMContentLoaded", function () {
-                    document.getElementById("redirectLink").href =
-                        redirectLaurel;
-                    window.location.href = redirectLaurel;
+                    var hash = window.location.hash;
+                    document.getElementById("redirectLink").href = redirectLaurel + hash;
+                    window.location.href = redirectLaurel + hash;
                 });
             }
         </script>
